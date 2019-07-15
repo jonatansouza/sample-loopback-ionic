@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title>
+      Heróis
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-list class="hero-list">
+  <ion-item text-center *ngIf="(!heroes || !heroes?.length)">
+    <ion-label>Sem Heróis no momento!</ion-label>
+  </ion-item>
+    <ion-item *ngFor="let hero of heroes" (click)="selectHero(hero)">
+      <ion-avatar xslot="start" class="avatar-custom">
+          <img [src]="hero?.imageUrl">
+      </ion-avatar>
+      <ion-label>
+          <h2> {{hero?.name}}</h2>
+          <h3>{{hero?.status}}</h3>
+          <p>{{hero?.description}}</p>
+      </ion-label>
+  </ion-item>
+</ion-list>
+
+
