@@ -1,6 +1,6 @@
 # loopback ionic sample
 
-Projeto simples de integração do loopback e ionic
+Projeto simples de integração do loopback e ionic!
 
 ## Description
 
